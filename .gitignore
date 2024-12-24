@@ -7,3 +7,6 @@
 .config/zsh/*.local*
 .config/zsh/conf.d/*.local*
 .config/zsh/plugins/*.local*
+
+.config/karabiner/assets
+.config/karabiner/automatic_backups
