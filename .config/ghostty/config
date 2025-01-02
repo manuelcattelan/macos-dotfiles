@@ -1,0 +1,9 @@
+# See https://ghostty.org/docs/config/reference#theme
+cursor-style = "block"
+# See https://ghostty.org/docs/config/reference#cursor-style-blink
+cursor-style-blink = "false"
+# See https://ghostty.org/docs/config/reference#shell-integration-features
+shell-integration-features = "no-cursor"
+
+# See https://ghostty.org/docs/config/reference#theme
+theme = "/Users/mcattelan/Programming/personal/tokyonight.nvim/extras/ghostty/tokyonight_night"
