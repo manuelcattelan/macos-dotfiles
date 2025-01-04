@@ -44,6 +44,10 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       capabilities = vim.tbl_deep_extend("force", capabilities, require("blink.cmp").get_lsp_capabilities())
 
+      local mason_registry = require("mason-registry")
+      local mason_vue_language_server_path = mason_registry.get_package("vue-language-server"):get_install_path()
+        .. "/node_modules/@vue/language-server"
+
       -- Configure diagnostics floating window
       vim.diagnostic.config({
         underline = false,
@@ -56,6 +60,18 @@ return {
 
       local servers = {
         lua_ls = {},
+        ts_ls = {
+          init_options = {
+            plugins = {
+              {
+                name = "@vue/typescript-plugin",
+                location = mason_vue_language_server_path,
+                languages = { "javascript", "typescript", "vue" },
+              },
+            },
+          },
+          filetypes = { "javascript", "typescript", "vue" },
+        },
       }
 
       local handlers = {
