@@ -9,4 +9,4 @@ cursor-style-blink = "false"
 shell-integration-features = "no-cursor"
 
 # See https://ghostty.org/docs/config/reference#theme
-theme = "/Users/mcattelan/Programming/personal/tokyonight.nvim/extras/ghostty/tokyonight_night"
+theme = "tokyonight_night"
