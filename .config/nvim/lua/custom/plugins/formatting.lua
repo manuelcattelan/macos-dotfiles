@@ -7,6 +7,7 @@ return {
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       vue = { "prettierd" },
+      css = { "prettierd" },
     },
   },
 }
